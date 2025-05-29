@@ -1,4 +1,5 @@
 # 🧠 MindBoard – Hands-Free Communication for the Speech & Motor Impaired
+# Made with ❤️ by OINK BOINK
 
 **MindBoard** is an innovative, AI-powered, real-time communication system designed to empower individuals with speech or motor disabilities. It enables users to type and speak using only nose movements captured by a standard webcam—no external hardware required.
 
@@ -64,3 +65,82 @@ MindBoard enhances quality of life for individuals affected by:
 ```bash
 git clone https://github.com/your-repo/mindboard.git
 cd mindboard
+```
+
+### 2. Set Up Python Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+#Install all required packages using the requirements file:
+```
+pip install -r requirements.txt
+```
+# If requirements.txt is not available, install manually:
+
+```
+pip install opencv-python mediapipe pyttsx3 pyvirtualcam
+```
+# For optional ML predictive text:
+
+```
+pip install transformers torch torchvision torchaudio
+# or, for TensorFlow
+pip install transformers tensorflow
+
+```
+## 4. Install OBS Studio & Virtual Camera
+
+1.  **Download OBS Studio**: Go to [https://obsproject.com/](https://obsproject.com/)
+2.  **Install and open OBS Studio**.
+3.  Ensure **Virtual Camera** is available (it's enabled by default in modern OBS versions).
+4.  In OBS, click **Start Virtual Camera** in the **Controls** dock.
+
+## ⚙️ Configuration & Usage
+
+### 🔹 Google Meet/Zoom Integration (Real-Time Mode)
+
+1.  **Run MindBoard App**
+    ```bash
+    python mindboard_meet.py
+    ```
+    This will launch a webcam feed with the communication grid overlay.
+
+2.  **Set Up OBS Studio**
+    * Open **OBS Studio**.
+    * Add a **Window Capture** source:
+        * Click the `+` button in the **Sources** dock.
+        * Choose **Window Capture**.
+        * Select the **MindBoard application window**.
+        * Resize and position as needed.
+    * Click **Start Virtual Camera** in the **Controls** dock.
+
+3.  **Configure Google Meet/Zoom**
+    * **Google Meet**:
+        * Click the **three dots** → **Settings** → **Video** → **Camera** → **OBS Virtual Camera**.
+    * **Zoom**:
+        * Click the arrow next to **Start/Stop Video** → **Video Settings** → **Camera** → **OBS Virtual Camera**.
+
+    Your nose-controlled MindBoard interface will now appear in the meeting, and TTS will vocalize your typed text.
+
+
+📄 License
+Include your license information here (e.g., MIT, GPL, Apache 2.0).
+
+🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
+
+
+
+
+
+
+
+
+
+
+
+
+
