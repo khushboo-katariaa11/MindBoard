@@ -167,10 +167,6 @@ Once the application starts, you'll see your webcam feed with an overlaid grid a
 
     Your nose-controlled MindBoard interface will now appear in the meeting, and TTS will vocalize your typed text.
 
-
-📄 License
-Include your license information here (e.g., MIT, GPL, Apache 2.0).
-
 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
