@@ -98,6 +98,48 @@ pip install transformers tensorflow
 3.  Ensure **Virtual Camera** is available (it's enabled by default in modern OBS versions).
 4.  In OBS, click **Start Virtual Camera** in the **Controls** dock.
 
+## ▶️ How to Run
+
+After completing the [Installation Instructions](#️-installation-instructions), follow these steps to launch and use MindBoard.
+
+### 1. Run the MindBoard Application
+
+Open your terminal or command prompt, navigate to the `mindboard` directory (where you cloned the repository and installed dependencies), and execute the main script:
+
+```bash
+python mindboard.py
+
+```
+## How it Works
+Once the application starts, you'll see your webcam feed with an overlaid grid and various text elements.
+
+1.  **Position Yourself:** Ensure your face is well-lit and clearly visible to the webcam.
+
+2.  **Mode Switching:**
+    * The current mode is displayed at the top left.
+    * Press the **`TAB`** key on your keyboard to switch between "MANUAL" and "AUTO" modes.
+
+3.  **Typing in Manual Mode:**
+    * **Selection:** Move your head to position your **nose tip** over the desired grid zone.
+    * **Confirmation:** Hold your gaze on the zone for approximately **1.5 seconds** (dwell time). The zone will be highlighted in yellow to indicate selection.
+    * **Keyboard Interaction:**
+        * When the **main grid** is active, zones represent groups of letters (e.g., [A-E], [F-J]).
+        * Selecting a main grid zone switches to a **sub-grid**, displaying individual characters from that group, plus "**BACK**" (to return to the main grid), "**SPACE**", and "**SPEAK**".
+        * Selecting a **character** adds it to your sentence.
+        * Selecting "**SPACE**" adds a space to your sentence.
+        * Selecting "**SPEAK**" converts the current sentence to speech.
+    * **Word Predictions:** Look at the bottom row of the grid. If prediction words appear, you can select one of the three prediction zones to append the suggested word to your sentence.
+
+4.  **Typing in Auto Mode:**
+    * **Scanning:** The system will automatically highlight each grid zone in a cycling pattern.
+    * **Selection:** When the desired zone is highlighted, **blink** your eyes to select it.
+    * The subsequent interactions for main grid, sub-grid, and actions are the same as in Manual Mode.
+
+5.  **Exiting:**
+    * Press the **`ESC`** key to close the application.
+
+---
+
 ## ⚙️ Configuration & Usage
 
 ### 🔹 Google Meet/Zoom Integration (Real-Time Mode)
